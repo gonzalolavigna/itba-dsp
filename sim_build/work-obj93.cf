@@ -1,0 +1,4 @@
+v 4
+file / "/workspaces/coco-examples/hdl/mult_by_constant.vhd" "c8ba0c745c16916a76f3399fd680f833c30ef311" "20221024195249.262":
+  entity mult_by_constant at 15( 562) + 0 on 11;
+  architecture rtl of mult_by_constant at 34( 1111) + 0 on 12;
