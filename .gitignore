@@ -1,2 +1,6 @@
 __pycache__/
 .ipynb_checkpoints/
+sim_build/
+wave.vcd
+result.xml
+e~mult_by_constant
