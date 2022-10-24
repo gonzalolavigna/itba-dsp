@@ -59,8 +59,8 @@ Using the previous implementation as base implement a Direct Form Filter.<br>
 
 **Hint:** Don't forget to propagate bits for multiplications.
 ### Execercise 2 (Pipeline)
-Using the previous implementation add Pipelining and Register to the design.
-![PIPE](doc/img/pipeline_cell.png)
+Using the previous implementation add Pipelining and Register to the design.<br>
+![PIPE](doc/img/pipeline_cell.png)<br>
 
 Add registers to the multiplication and make multiple replicattion to replace each multiply and add operation.
 
