@@ -8,5 +8,5 @@ What is docker?
 [VIDEO](https://www.youtube.com/watch?v=rOTqprHv1YE)
 
 Follow the instructions of the two following links:
-[INSTALL](https://docs.docker.com/engine/install/ubuntu/)
+[INSTALL](https://docs.docker.com/engine/install/ubuntu/)<br>
 [POST_INSTALL](https://docs.docker.com/engine/install/linux-postinstall/)
