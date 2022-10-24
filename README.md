@@ -48,9 +48,9 @@ sQ1.15 (1 bit integeger and 15 bit fractionals).
 Use DE0 Nano board as target and technology for synthesis. (No need of download design to the board).
 Target frequency: 50 Mhz.
 ### Execercise 1 (Direct Form)
-Using the previous implementation as base implement a Direct Form Filter
+Using the previous implementation as base implement a Direct Form Filter.<br>
 
-![DIRECT](doc/img/direct-form-filter.png)
+![DIRECT](doc/img/direct-form-filter.png)<br>
 
 * Make simulations using cocotb
 * Load arbitrary coefficients in the design at compilation time.
