@@ -3,4 +3,4 @@ __pycache__/
 sim_build/
 wave.vcd
 result.xml
-e~mult_by_constant
+e~mult_by_constant*
