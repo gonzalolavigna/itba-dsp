@@ -1,6 +1,26 @@
 # FPGA and DSP ITBA
 Repository for TP Laboratorio DSP and FPGA (ITBA)
 
+## USB Blaster from Linux
+Add this rules:
+[Link](https://www.rocketboards.org/foswiki/Documentation/UsingUSBBlasterUnderLinux)
+
+
+For Ubuntu 12.04/14.04/16.04 create the file /etc/udev/rules.d/51-usbblaster.rules with the following contents:
+**Also worked for ubuntu 20.04**
+```bash
+ USB Blaster
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="09fb", ATTR{idProduct}=="6001", MODE="0666", NAME="bus/usb/$env{BUSNUM}/$env{DEVNUM}", RUN+="/bin/chmod 0666 %c"
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="09fb", ATTR{idProduct}=="6002", MODE="0666", NAME="bus/usb/$env{BUSNUM}/$env{DEVNUM}", RUN+="/bin/chmod 0666 %c"
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="09fb", ATTR{idProduct}=="6003", MODE="0666", NAME="bus/usb/$env{BUSNUM}/$env{DEVNUM}", RUN+="/bin/chmod 0666 %c"
+
+# USB Blaster II
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="09fb", ATTR{idProduct}=="6010", MODE="0666", NAME="bus/usb/$env{BUSNUM}/$env{DEVNUM}", RUN+="/bin/chmod 0666 %c"
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="09fb", ATTR{idProduct}=="6810", MODE="0666", NAME="bus/usb/$env{BUSNUM}/$env{DEVNUM}", RUN+="/bin/chmod 0666 %c"
+```
+
+
+
 Is recommended to run linux either in a partition, virtual machine or with windows wsl.**Ubuntu 22.04**.
 ## Install Docker
 
@@ -68,7 +88,7 @@ Add registers to the multiplication and make multiple replicattion to replace ea
 * Load arbitrary coefficients in the design at compilation time.
 * Make a synthesis/implementation with 8 coefficients.
 
-**Hint 1:** Don't forget to propagate bitsfor multiplications.
+**Hint 1:** Don't forget to propagate bits for multiplications.<br>
 **Hint 2:** Verification for single cell is recommended.
 
 ### Execercise 3 (Saturation and trunction)
